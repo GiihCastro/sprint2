@@ -387,21 +387,24 @@ def main(page: ft.Page):
                                 ft.Row(
                                     controls=[
                                         ft.Icon(
-                                            ft.icons.HOME,
+                                            ft.icons.LOCATION_ON_OUTLINED,
                                             color="#0D633D"
                                         ),
                                         ft.Column(
                                             controls=[
                                                 ft.Text(
-                                                    "Início",
+                                                    "Casa",
                                                     color="#0D633D",
-                                                    weight='bold'
+                                                    weight='bold',
+                                                    size=14
                                                 ),
                                                 ft.Text(
-                                                    "Página inicial",
-                                                    color="#5E5E5E"
+                                                    "Rua Flutuantes 232, Joalba",
+                                                    color="#5E5E5E",
+                                                    size=12  
                                                 ),
                                             ],
+                                            spacing=4,  
                                             alignment=ft.MainAxisAlignment.CENTER,
                                         ),
                                         ],
@@ -411,21 +414,24 @@ def main(page: ft.Page):
                                 ft.Row(
                                     controls=[
                                         ft.Icon(
-                                            ft.icons.PHONE,
-                                            color="#0D633D"
+                                            ft.icons.LOCATION_ON_OUTLINED,
+                                            color="#000000"
                                         ),
                                         ft.Column(
                                             controls=[
                                                 ft.Text(
-                                                    "Contato",
-                                                    color="#0D633D",
-                                                    weight='bold'
+                                                    "Risttoria Pedro Bales",
+                                                    color="#000000",
+                                                    weight='bold',
+                                                    size=14
                                                 ),
                                                 ft.Text(
-                                                    "Fale conosco",
-                                                    color="#5E5E5E"
+                                                    "Avenida Leopolda 78, Alme",
+                                                    color="#5E5E5E",
+                                                    size=12  
                                                 ),
                                             ],
+                                            spacing=4,  
                                             alignment=ft.MainAxisAlignment.CENTER,
                                         ),
                                         ],
@@ -435,34 +441,37 @@ def main(page: ft.Page):
                                 ft.Row(
                                     controls=[
                                         ft.Icon(
-                                            ft.icons.LOCATION_ON,
-                                            color="#0D633D"
+                                            ft.icons.LOCATION_ON_OUTLINED,
+                                            color="#000000",
                                         ),
                                         ft.Column(
                                             controls=[
                                                 ft.Text(
-                                                    "Localização",
-                                                    color="#0D633D",
-                                                    weight='bold'
+                                                    "Cultura Lunar",
+                                                    color="#000000",
+                                                    weight='bold',
+                                                    size=14
                                                 ),
                                                 ft.Text(
-                                                    "Ver no mapa",
-                                                    color="#5E5E5E"
+                                                    "Rua João XI, Rios",
+                                                    color="#5E5E5E",
+                                                    size=12  
                                                 ),
                                             ],
+                                            spacing=4,  
                                             alignment=ft.MainAxisAlignment.CENTER,
                                         ),
                                         ],
                                     ),
                                 ],
-                                alignment=ft.MainAxisAlignment.SPACE_EVENLY,
-                            ),
+                                    spacing=5,
+                                ),
 
                         # Menu Inferior com 3 Ícones
                         ft.Container(
-                            bgcolor="#0D633D",  # Cor de fundo do menu inferior
+                            bgcolor="#0D633D", 
                             height=60,
-                            margin=ft.margin.only(top=20),
+                            margin=ft.margin.only(top=40),
                             width=page.width,
                             padding=ft.padding.all(10),
                             border_radius=ft.border_radius.only(top_left=20, top_right=20),
